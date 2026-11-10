@@ -1246,3 +1246,571 @@ img {
     max-width: 100%;
 }
 
+
+
+/* =========================================================
+   FINAL RESPONSIVE FIX
+   Keeps the original desktop design and content unchanged.
+   Supports mobile portrait and mobile landscape.
+========================================================= */
+
+/* Prevent unwanted horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header,
+section,
+footer,
+nav,
+.container,
+.about-container,
+.skills-container,
+.resume-container,
+.footer-container {
+    min-width: 0;
+}
+
+button,
+a,
+input,
+textarea {
+    max-width: 100%;
+}
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 992px) {
+    #about .about-container,
+    #skills .skills-container,
+    #projects .skills-container,
+    #resume .resume-container,
+    footer .footer-container {
+        width: 90%;
+    }
+
+    #banner {
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 24px;
+    }
+
+    #banner .banner-content,
+    #banner .banner-image {
+        min-width: 0;
+    }
+
+    #banner .banner-content h1 {
+        font-size: clamp(48px, 7vw, 60px);
+    }
+
+    #banner .banner-content p {
+        overflow-wrap: anywhere;
+    }
+
+    .skill-box .skill-card {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .resume-card {
+        margin-right: 0;
+    }
+
+    footer .footer-container {
+        gap: 35px;
+    }
+}
+
+/* Mobile portrait and general mobile layout */
+@media screen and (max-width: 768px) {
+    header {
+        padding-top: 20px;
+        background-position: 5px 100px, bottom right;
+        background-size: 60px auto, 100% auto;
+    }
+
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo h2 {
+        font-size: 32px;
+    }
+
+    .menu-toggle {
+        display: block;
+        flex: 0 0 auto;
+        padding: 8px;
+        color: #181818;
+    }
+
+    nav .menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        width: min(240px, 90vw);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 18px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 5px 25px #00000020;
+        z-index: 1000;
+    }
+
+    nav .menu.is-open {
+        display: flex;
+    }
+
+    nav .menu li a {
+        display: block;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    nav .menu .btn {
+        text-align: center;
+    }
+
+    #banner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 45px 5% 0;
+        gap: 25px;
+    }
+
+    #banner .banner-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 28px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: clamp(40px, 9vw, 50px);
+    }
+
+    #banner .banner-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    #banner .banner-content > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #banner .banner-content .btn,
+    #banner .banner-content a.btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: 0;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    #banner .banner-image {
+        width: 100%;
+        max-width: 360px;
+        flex: 0 1 auto;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #resume {
+        padding-top: 75px;
+    }
+
+    .section-heading {
+        width: 90%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    #about .about-container {
+        width: 90%;
+        padding: 50px 22px;
+    }
+
+    #about .about-container .about-info {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 12px;
+    }
+
+    .about-info .info-card {
+        min-width: 0;
+    }
+
+    .about-info .info-card p,
+    .about-info .info-card h4 {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    #skills .skills-container,
+    #projects .skills-container {
+        width: 90%;
+    }
+
+    #skills .skills-container .skill-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    #projects .skills-container .skill-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .skill-box .skill-card {
+        padding: 18px;
+        min-width: 0;
+    }
+
+    .skill-card h3 {
+        font-size: 17px;
+        overflow-wrap: anywhere;
+    }
+
+    .skill-card p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .project-links {
+        gap: 8px;
+    }
+
+    .project-links a {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+    #resume .resume-container {
+        width: 90%;
+        margin: 55px auto 0;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .resume-container .education,
+    .resume-container .experience {
+        width: 100%;
+    }
+
+    .resume-card {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .resume-container .section-title {
+        font-size: 25px;
+    }
+
+    .resume-card .card-title {
+        font-size: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    .resume-card .card-info {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .resume-card .card-text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    footer {
+        margin-top: 75px;
+        padding: 65px 0;
+    }
+
+    footer .footer-container {
+        width: 90%;
+        flex-direction: column;
+        gap: 38px;
+    }
+
+    .footer-container .social,
+    .footer-container .form {
+        width: 100%;
+    }
+
+    .footer-container h2 {
+        font-size: 27px;
+    }
+
+    .footer-container form input[type="text"],
+    .footer-container form input[type="email"],
+    .footer-container form textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+/* Small mobile portrait */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    nav {
+        width: 92%;
+    }
+
+    .logo h2 {
+        font-size: 29px;
+    }
+
+    #banner {
+        margin-top: 35px;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 24px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 40px;
+    }
+
+    #banner .banner-content > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #banner .banner-content .btn,
+    #banner .banner-content a.btn {
+        width: 100%;
+    }
+
+    #about .about-container {
+        padding: 40px 17px;
+    }
+
+    #about .about-container .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    #skills .skills-container .skill-box,
+    #projects .skills-container .skill-box {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-box .skill-card {
+        padding: 22px;
+    }
+
+    .resume-card .card-title {
+        font-size: 19px;
+    }
+
+    .resume-card .card-info {
+        font-size: 15px;
+    }
+}
+
+/* Mobile landscape: use the available horizontal space */
+@media screen and (max-width: 900px)
+and (orientation: landscape) {
+    header {
+        padding-top: 12px;
+        background-size: 45px auto, auto 100%;
+        background-position: 5px 65px, bottom right;
+    }
+
+    nav {
+        width: 92%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .logo h2 {
+        font-size: 28px;
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 6px;
+        font-size: 22px;
+    }
+
+    nav .menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 6px);
+        right: 0;
+        width: 220px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 5px 25px #00000020;
+        z-index: 1000;
+    }
+
+    nav .menu.is-open {
+        display: flex;
+    }
+
+    #banner {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        margin: 25px 5% 0;
+        gap: 25px;
+    }
+
+    #banner .banner-content {
+        flex: 1 1 55%;
+        max-width: 55%;
+    }
+
+    #banner .banner-content h2 {
+        font-size: 24px;
+    }
+
+    #banner .banner-content h1 {
+        font-size: clamp(36px, 6vw, 48px);
+    }
+
+    #banner .banner-content p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    #banner .banner-content > div {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    #banner .banner-content .btn,
+    #banner .banner-content a.btn {
+        width: auto;
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    #banner .banner-image {
+        flex: 0 1 40%;
+        width: 40%;
+        max-width: 280px;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #resume {
+        padding-top: 55px;
+    }
+
+    #about .about-container {
+        padding: 45px 6%;
+    }
+
+    #skills .skills-container,
+    #projects .skills-container,
+    #resume .resume-container,
+    footer .footer-container {
+        width: 90%;
+    }
+
+    #skills .skills-container .skill-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #projects .skills-container .skill-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #resume .resume-container {
+        margin-top: 45px;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: 60px;
+        padding: 55px 0;
+    }
+
+    footer .footer-container {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .footer-container .social,
+    .footer-container .form {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .footer-container h2 {
+        font-size: 24px;
+    }
+
+    .footer-container .social p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* Very short landscape screens */
+@media screen and (max-width: 900px)
+and (orientation: landscape)
+and (max-height: 450px) {
+    #banner {
+        margin-top: 15px;
+    }
+
+    #banner .banner-content p {
+        margin-bottom: 10px;
+    }
+
+    #banner .banner-image {
+        max-width: 220px;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #resume {
+        padding-top: 45px;
+    }
+}
