@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Mehedi Hasan Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="portfolio.css">
+    
+
+    <script src="./script.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
+    
+</head>
+
+<body class="font-open-sans">
+
+    <!-- Header -->
+    <header>
+       <nav>
+        <div class="logo">
+            <h2>Mehe<span class="color-orange">d</span>i</h2>
+        </div>
+
+         <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+        <ul class="menu">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="btn">Hire Me</a></li>
+        </ul>
+    </nav>
+        <!-- Banner -->
+        <section id="banner">
+
+            <div class="banner-content">
+
+                <h2>Hi, I am</h2>
+                <h1>Mehedi</h1>
+
+                <p>
+                    I am a Software Engineering student with an interest
+                    in programming and web development. I am eager to learn
+                    new technologies, gain practical experience, and develop
+                    my skills as a web developer through an internship.
+                </p>
+
+                <div>
+                    <a href="cv.pdf" download class="btn">
+                        <i class="fa-solid fa-download"></i>
+                         Download CV
+                    </a>
+                    <button class="btn" data-scroll-to="contact">
+                        <i class="fa-solid fa-phone"></i>
+                         Contact
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="banner-image">
+                <img src="images/image.png" alt="Mehedi Hasan">
+            </div>
+
+        </section>
+    </header>
+
+
+    <!-- About Me -->
+    <section id="about">
+
+        <div class="about-container">
+
+            <div class="section-heading">
+                <h2>About</h2>
+
+                <p>
+                    I am a Software Engineering student at Daffodil
+                    International University with an interest in web
+                    development. I enjoy learning new technologies and
+                    building clean, user-friendly websites. I am continuously
+                    improving my coding, problem-solving, and technical
+                    skills to become a skilled web developer.
+                </p>
+            </div>
+
+            <div class="about-info">
+
+                <div class="info-card">
+                    <p>Name</p>
+                    <h4>Md. Mehedi Hasan</h4>
+                </div>
+
+                <div class="info-card">
+                    <p>Email</p>
+                    <h4>mehedihasanswe143@gmail.com</h4>
+                </div>
+
+                <div class="info-card">
+                    <p>Date of birth</p>
+                    <h4>31 December 2004</h4>
+                </div>
+
+                <div class="info-card">
+                    <p>From</p>
+                    <h4>Dhaka, Bangladesh</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- What I Do -->
+    <section id="skills">
+
+        <div class="skills-container">
+
+            <div class="section-heading">
+                <h2>Skills</h2>
+
+                <p>
+                    I have been learning programming and web development.
+                    Below is an overview of the technologies I have learned
+                    and practiced to improve my coding skills and build
+                    practical projects.
+                </p>
+            </div>
+
+            <div class="skill-box">
+
+                <!-- C -->
+                <div class="skill-card">
+                    <i class="fa-solid fa-code skill-icon"></i>
+                    <h3>C Programming</h3>
+                    <p>
+                        Learning C programming fundamentals, problem solving,
+                        and data structures through practical coding.
+                    </p>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-java skill-icon"></i>
+                    <h3>Java</h3>
+                    <p>
+                        Learning object-oriented programming, classes,
+                        inheritance, and Java fundamentals.
+                    </p>
+                </div>
+
+                <!-- HTML -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <h3>HTML</h3>
+                    <p>
+                        Creating structured web pages using HTML elements
+                        and semantic tags.
+                    </p>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt skill-icon"></i>
+                    <h3>CSS</h3>
+                    <p>
+                        Designing attractive websites using CSS properties,
+                        layouts, and responsive techniques.
+                    </p>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-card">
+                    <i class="fa-brands fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                    <p>
+                        Learning Python fundamentals, programming logic,
+                        and basic problem-solving.
+                    </p>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card">
+                    <img src="icons/js.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p>
+                        Learning JavaScript fundamentals and practicing
+                        coding through small projects.
+                    </p>
+                </div>
+
+                <!-- React -->
+                <div class="skill-card">
+                    <img src="icons/react.png" alt="React">
+                    <h3>React</h3>
+                    <p>
+                        Learning React to build interactive and reusable
+                        user interfaces. Practicing how to create modern,
+                        responsive, and user-friendly websites.
+                    </p>
+                </div>
+
+                <!-- Node.js -->
+                <div class="skill-card">
+                    <img src="icons/nodejs.png" alt="Node.js">
+                    <h3>Node.js</h3>
+                    <p>
+                        Learning Node.js for backend development, building
+                        server-side applications, and managing data efficiently.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    
+<!-- My Projects -->
+<section id="projects">
+
+    <div class="skills-container">
+
+        <div class="section-heading">
+            <h2>My Projects</h2>
+
+            <p>
+                Here are some projects I have worked on.
+                You can explore the source code and live demos.
+            </p>
+        </div>
+
+        <div class="skill-box">
+
+            <!-- Project 1 -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-boxes-stacked skill-icon"></i>
+
+                <h3>Stock and Inventory Management System</h3>
+
+                <p>
+                    A system to manage products, update stock,
+                    search products, and generate low-stock alerts.
+                </p>
+
+                <div class="project-links">
+                    <a href="YOUR_GITHUB_LINK" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+
+                    <a href="YOUR_DEMO_LINK" target="_blank">
+                        <i class="fa-solid fa-eye"></i> Live Demo
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+            <div class="skill-card">
+
+                <i class="fa-solid fa-book skill-icon"></i>
+
+                <h3>Library Management System</h3>
+
+                <p>
+                    A system to manage books, search records,
+                    manage members, and track book issue and return.
+                </p>
+
+                <div class="project-links">
+                    <a href="YOUR_GITHUB_LINK" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+
+                    <a href="YOUR_DEMO_LINK" target="_blank">
+                        <i class="fa-solid fa-eye"></i> Live Demo
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+               
+
+           
+
+    <!-- Resume -->
+    <section id="resume">
+
+        <div class="section-heading">
+            <h2>A Summary Of My Resume</h2>
+        </div>
+
+        <div class="resume-container">
+
+            <div class="education">
+
+                <h2 class="section-title">My Education</h2>
+
+                <div class="resume-card">
+                    <h3 class="card-title">B.Sc. in Software Engineering</h3>
+                    <p class="card-info">Daffodil International University</p>
+                    <p class="card-text">
+                        I am a student at Daffodil International University.
+                        I am learning coding and web development and
+                        improving my problem-solving skills.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Higher Secondary Education</h3>
+                    <p class="card-info">
+                        Government Azizul Hoque College / 2021-2022
+                    </p>
+                    <p class="card-text">
+                        Completed my Higher Secondary Certificate (HSC)
+                        and developed an interest in technology and
+                        problem-solving.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Secondary Education</h3>
+                    <p class="card-info">
+                        Tarakandi High School / 2019-2020
+                    </p>
+                    <p class="card-text">
+                        Completed my Secondary School Certificate (SSC)
+                        with a focus on academic learning and personal development.
+                    </p>
+                </div>
+
+                <hr>
+
+            </div>
+
+
+            <div class="experience">
+
+                <h2 class="section-title">My Experience</h2>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Web Development Intern</h3>
+                    <p class="card-info">ABC Tech Ltd.</p>
+                    <p class="card-text">
+                        Learning front-end development with HTML, CSS,
+                        and JavaScript to create responsive, interactive,
+                        and user-friendly websites while improving my
+                        coding skills.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Data Entry Operator</h3>
+                    <p class="card-info">Freelance</p>
+                    <p class="card-text">
+                        Entered and organized data using Microsoft Word
+                        and Excel while improving my data entry skills.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Student Volunteer</h3>
+                    <p class="card-info">University Event Team</p>
+                    <p class="card-text">
+                        Helped organize university events and activities,
+                        supporting teamwork and ensuring smooth event management.
+                    </p>
+                </div>
+
+                <hr>
+
+            </div>
+
+        </div>
+
+        <div class="text-center">
+            <a href="cv.pdf" download class="btn">
+                        <i class="fa-solid fa-download"></i>
+                         Download CV
+                    </a>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <section id="contact" class="footer-container">
+
+            <div class="social">
+
+                <h2>Lets Contact</h2>
+
+                <p>
+                    Please fill out the form on this section to contact
+                    with me or call between 9:00 A.M and 8.00 P.M ET,
+                    Monday through Friday.
+                </p>
+
+                <div class="icons">
+                    <a href="">
+                        <img src="icons/facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="">
+                        <img src="icons/twitter.png" alt="Twitter">
+                    </a>
+
+                    <a href="">
+                        <img src="icons/insta.png" alt="Instagram">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <form class="form" id="contact-form">
+
+                <h2>Lets Message me</h2>
+
+                <div>
+                    <input type="text" name="name"
+                    placeholder="Your Name :" required>
+                </div>
+
+                <div>
+                    <input type="email" name="email"
+                    placeholder="Your Email :" required>
+                </div>
+
+                <div>
+                    <textarea rows="8" name="message"
+                    placeholder="Message :" required></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Submit">
+                <p id="form-status"></p>
+
+            </form>
+
+        </section>
+
+    </footer>
+
+   
+</body>
+</html>
