@@ -91,8 +91,11 @@ header{
     background-position: 23px 38px, bottom right;
 
     background-repeat: no-repeat;
-    padding-top: 50px;
+    padding-top: 20px;
+    /* padding-bottom: 60px; */
 }
+
+
 
 nav{
     width:71% ;
@@ -1778,4 +1781,241 @@ and (max-height: 450px) {
     #resume {
         padding-top: 45px;
     }
+}
+
+
+/* Make all Skills cards equal height */
+#skills .skill-box {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+#skills .skill-card {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/* Skills Card Lighting Effect */
+#skills .skill-card {
+    position: relative;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#skills .skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #4e9eff;
+    box-shadow:
+        0 0 10px #4e9eff,
+        0 0 25px #4e9eff55,
+        0 0 45px #4e9eff33;
+}
+
+
+/* Projects Card Lighting Effect */
+#projects .skill-card {
+    position: relative;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#projects .skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #4e9eff;
+    box-shadow:
+        0 0 10px #4e9eff,
+        0 0 25px #4e9eff55,
+        0 0 45px #4e9eff33;
+}
+
+
+/* Navbar Links Lighting Effect */
+nav .menu a {
+    display: inline-block;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+}
+
+nav .menu a:hover {
+    color: #87CEEB;
+    text-shadow:
+        0 0 5px #87CEEB,
+        0 0 15px #87CEEB55,
+        0 0 25px #87CEEB33;
+    transform: translateY(-3px);
+}
+
+
+/* Download CV & Contact Button Lighting Effect */
+#banner .banner-content .btn {
+    position: relative;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#banner .banner-content .btn:hover {
+    transform: translateY(-8px);
+    border-color: #4e9eff;
+    box-shadow:
+        0 0 10px #4e9eff,
+        0 0 25px #4e9eff55,
+        0 0 45px #4e9eff33;
+}
+
+/* Resume Download CV Button Lighting Effect */
+#resume .btn {
+    position: relative;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#resume .btn:hover {
+    transform: translateY(-8px);
+    border-color: #4e9eff;
+    box-shadow:
+        0 0 10px #4e9eff,
+        0 0 25px #4e9eff55,
+        0 0 45px #4e9eff33;
+}
+
+/* Contact Form Submit Button Lighting Effect */
+#contact-form .btn {
+    position: relative;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#contact-form .btn:hover {
+    transform: translateY(-8px);
+    border-color: #4e9eff;
+    box-shadow:
+        0 0 10px #4e9eff,
+        0 0 25px #4e9eff55,
+        0 0 45px #4e9eff33;
+}
+
+/* Project GitHub & Live Demo Button Lighting Effect */
+#projects .project-links a {
+    position: relative;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#projects .project-links a:hover {
+    transform: translateY(-8px);
+    border-color: #4e9eff;
+    box-shadow:
+        0 0 10px #4e9eff,
+        0 0 25px #4e9eff55,
+        0 0 45px #4e9eff33;
+} 
+
+
+/* =========================
+   STICKY NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #FFF8F3;
+}
+
+.navbar nav {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 12px 0;
+}
+
+/* Desktop Menu */
+.navbar nav .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .navbar nav {
+        width: 90%;
+    }
+
+    .navbar nav .menu {
+        gap: 12px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .navbar nav {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar nav .menu-toggle {
+        display: block;
+    }
+
+    .navbar nav .menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        width: min(240px, 90vw);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 5px 25px #00000020;
+        z-index: 1000;
+    }
+
+    .navbar nav .menu.is-open {
+        display: flex;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .navbar nav {
+        width: 92%;
+    }
+}
+
+/* Social Icons Lighting Effect */
+#contact .icons a {
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+#contact .icons a:hover {
+    transform: translateY(-8px);
+    filter: drop-shadow(0 0 10px #4e9eff)
+            drop-shadow(0 0 20px #4e9eff55)
+            drop-shadow(0 0 35px #4e9eff33);
+}
+
+#contact .icons img {
+    transition: all 0.4s ease;
 }
