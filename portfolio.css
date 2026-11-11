@@ -85,69 +85,39 @@ a.btn {
    2. HEADER & NAVBAR
 ========================= */
 
-header {
+header{
     background-color: #FFF8F3;
-
-    background-image:
-        url("../images/developer.png"),
-        url("../images/header_bg.png");
-
-    background-position:
-        23px 38px,
-        bottom right;
+    background: url("../images/developer.png") , url("../images/header_bg.png") ,#FFF8F3;
+    background-position: 23px 38px, bottom right;
 
     background-repeat: no-repeat;
-
-    background-size:
-        auto,
-        auto;
-    
     padding-top: 50px;
 }
 
-
-
-nav {
+nav{
+    width:71% ;
+    max-width: 1140px;
+    /* border: 1px solid red; */
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 
-.logo h2 {
-    font-size: 45px;
-    font-weight: 800;
-}
-
-.menu {
+nav .menu{
     display: flex;
+    list-style-type: none;
+    gap: 51px;
+    font-size: 20px;
     align-items: center;
-    gap: 22px;
-    list-style: none;
+    
+
 }
 
-.menu li a {
+nav .menu a{
+    font-size: 20px;
+    color: 474747;
     text-decoration: none;
-    color: #474747;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.menu li a:hover {
-    color: #FD6E0A;
-}
-
-.menu .btn {
-    background-color: #FD6E0A;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 5px;
-}
-
-.menu .btn:hover {
-    background-color: #e85d04;
-    color: white;
 }
 
 /* Responsive Navbar */
@@ -180,48 +150,43 @@ nav {
    3. BANNER
 ========================= */
 
-#banner {
-    margin: 47px 38px 0 16%;
-    
+#banner{
+    /* border: 1px solid red; */
+    margin: 47px 38px 0 230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-}
 
-#banner .banner-content {
+}
+#banner .banner-content{
     max-width: 585px;
 }
 
-#banner .banner-content h2 {
+#banner .banner-content h2{
     font-size: 45px;
     font-weight: 600;
     color: #474747;
     margin-bottom: 5px;
-}
 
-#banner .banner-content h1 {
+}
+#banner .banner-content h1{
     font-size: 85px;
     font-weight: bold;
     color: #181818;
     margin-bottom: 20px;
-}
 
-#banner .banner-content p {
+}
+#banner .banner-content p{
     font-size: 18px;
     color: #757575;
     line-height: 30px;
     margin-bottom: 30px;
+
 }
 
-#banner .banner-image {
+#banner .banner-image{
     max-width: 584px;
-    flex: 1;
-}
-
-#banner .banner-image img {
-    width: 100%;
-    display: block;
+    vertical-align: 0;
 }
 
 
