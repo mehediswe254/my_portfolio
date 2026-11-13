@@ -121,7 +121,7 @@ nav .menu{
 
 nav .menu a{
     font-size: 20px;
-    color: 474747;
+    color: #474747;
     text-decoration: none;
 }
 
@@ -2021,3 +2021,510 @@ nav .menu a:hover {
 #contact .icons img {
     transition: all 0.4s ease;
 }
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+    margin-left: 15px;
+    border: 1px solid #FD6E0A;
+    border-radius: 50%;
+    background: transparent;
+    color: #FD6E0A;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px #4e9eff,
+                0 0 25px #4e9eff55;
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #181818;
+}
+
+body.dark-mode header {
+    background-color: #121212;
+}
+
+body.dark-mode #about .about-container,
+body.dark-mode .skill-card,
+body.dark-mode .resume-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #ffffff;
+}
+
+body.dark-mode p {
+    color: #cccccc;
+}
+
+body.dark-mode footer {
+    background-color: #181818;
+}
+
+body.dark-mode .menu {
+    background-color: #181818;
+}
+
+body.dark-mode .menu a {
+    color: #ffffff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #292929;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* Smooth transition */
+body,
+.navbar,
+header,
+.skill-card,
+footer {
+    transition: all 0.3s ease;
+}
+
+
+/* Dark Mode Text Visibility Fix */
+
+/* Logo */
+body.dark-mode .logo h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .logo h2 .color-orange {
+    color: #FD6E0A;
+}
+
+/* Banner Text */
+body.dark-mode #banner .banner-content h1 {
+    color: #ffffff;
+}
+
+body.dark-mode #banner .banner-content h2,
+body.dark-mode #banner .banner-content p {
+    color: #cccccc;
+}
+
+/* Section Headings */
+body.dark-mode .section-heading h2 {
+    color: #ffffff;
+}
+
+/* Resume Headings */
+body.dark-mode .resume-container .section-title,
+body.dark-mode .resume-card .card-title {
+    color: #ffffff;
+}
+
+/* Navbar */
+body.dark-mode nav .menu a {
+    color: #ffffff;
+}
+
+body.dark-mode nav .menu a.btn {
+    color: #ffffff;
+}
+
+body.dark-mode .menu-toggle {
+    color: #ffffff;
+}
+
+/* Developer Background */
+body.dark-mode header {
+    background-color: #121212;
+    background-blend-mode: screen, normal;
+}
+
+
+/* Dark Mode Submit Button Fix */
+
+body.dark-mode #contact-form button[type="submit"],
+body.dark-mode #contact-form input[type="submit"] {
+    background-color: #FD6E0A;
+    color: #ffffff;
+    border: none;
+}
+
+body.dark-mode #contact-form button[type="submit"]:hover,
+body.dark-mode #contact-form input[type="submit"]:hover {
+    background-color: #e85d00;
+    color: #ffffff;
+}
+
+
+/* =====================================
+   PREMIUM DARK MODE DESIGN
+===================================== */
+
+/* Main Background */
+body.dark-mode {
+    background: #080D1A;
+    color: #F8FAFC;
+}
+
+/* Navbar Glass Effect */
+body.dark-mode .navbar {
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+}
+
+/* Logo */
+body.dark-mode .logo h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .logo .color-orange {
+    color: #FD6E0A;
+    text-shadow: 0 0 12px rgba(253,110,10,0.5);
+}
+
+/* Navbar Links */
+body.dark-mode nav .menu a {
+    color: #CBD5E1;
+    transition: 0.3s ease;
+}
+
+body.dark-mode nav .menu a:hover,
+body.dark-mode nav .menu a.active {
+    color: #FD6E0A;
+    text-shadow: 0 0 12px rgba(253,110,10,0.5);
+}
+
+/* Banner */
+body.dark-mode header {
+    background-color: #080D1A;
+}
+
+body.dark-mode #banner .banner-content h1 {
+    color: #FFFFFF;
+}
+
+body.dark-mode #banner .banner-content h2 {
+    color: #CBD5E1;
+}
+
+body.dark-mode #banner .banner-content p {
+    color: #94A3B8;
+}
+
+/* Section Headings */
+body.dark-mode .section-heading h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .section-heading p {
+    color: #94A3B8;
+}
+
+/* About Section */
+body.dark-mode #about .about-container {
+    background: linear-gradient(135deg, #111C32, #17243A);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* About Information */
+body.dark-mode .about-info .info-card h4 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .about-info .info-card p {
+    color: #94A3B8;
+}
+
+/* Skill & Project Cards */
+body.dark-mode .skill-card {
+    background: linear-gradient(145deg, #17243A, #111C32);
+    border: 1px solid #263852;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transition: all 0.35s ease;
+}
+
+body.dark-mode .skill-card h3 {
+    color: #F8FAFC;
+}
+
+body.dark-mode .skill-card p {
+    color: #AAB8CC;
+}
+
+/* Card Hover Glow */
+body.dark-mode .skill-card:hover {
+    transform: translateY(-10px);
+    border-color: #FD6E0A;
+    box-shadow:
+        0 0 12px rgba(253,110,10,0.25),
+        0 12px 35px rgba(0,0,0,0.4);
+}
+
+/* Skill Icons */
+body.dark-mode .skill-card .skill-icon {
+    color: #FD6E0A;
+    filter: drop-shadow(0 0 8px rgba(253,110,10,0.4));
+}
+
+/* Resume */
+body.dark-mode .resume-container .section-title {
+    color: #FD6E0A;
+}
+
+body.dark-mode .resume-card .card-title {
+    color: #FFFFFF;
+}
+
+body.dark-mode .resume-card .card-info {
+    color: #CBD5E1;
+}
+
+body.dark-mode .resume-card .card-text {
+    color: #94A3B8;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background: linear-gradient(135deg, #111827, #0B1324);
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+body.dark-mode .footer-container h2 {
+    color: #FFFFFF;
+}
+
+body.dark-mode .footer-container .social p {
+    color: #AAB8CC;
+}
+
+/* Form Fields */
+body.dark-mode input,
+body.dark-mode textarea {
+    background: #17243A;
+    color: #FFFFFF;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+    outline: none;
+    border-color: #FD6E0A;
+    box-shadow: 0 0 0 3px rgba(253,110,10,0.15);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #94A3B8;
+}
+
+/* Buttons */
+body.dark-mode .btn,
+body.dark-mode .project-links a {
+    background: linear-gradient(135deg, #FD6E0A, #F04400);
+    color: #FFFFFF;
+    border: 1px solid rgba(255,255,255,0.12);
+    box-shadow: 0 5px 15px rgba(253,110,10,0.2);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .project-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(253,110,10,0.4);
+}
+
+/* Mobile Dropdown */
+body.dark-mode nav .menu {
+    background: #111C32;
+    border: 1px solid #263852;
+}
+
+/* Mobile Menu Icon */
+body.dark-mode .menu-toggle {
+    color: #FFFFFF;
+}
+
+/* Theme Toggle */
+body.dark-mode .theme-toggle {
+    color: #FD6E0A;
+    background: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 50%;
+}
+
+/* Smooth Transition */
+body,
+body * {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Orange Gradient Text */
+body.dark-mode .section-heading h2 {
+    background: linear-gradient(90deg, #FFFFFF, #FD6E0A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* About Card Glow */
+body.dark-mode #about .about-container:hover {
+    border-color: rgba(253,110,10,0.4);
+    box-shadow: 0 0 30px rgba(253,110,10,0.10);
+}
+
+/* Project Links */
+body.dark-mode .project-links a {
+    border-radius: 7px;
+}
+
+/* Resume Divider */
+body.dark-mode .resume-container hr {
+    border: none;
+    border-top: 1px solid #334155;
+}
+
+/* Hire Me button - Light Mode */
+body:not(.dark-mode) .btn {
+    background-color: #FD6E0A;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+body:not(.dark-mode) .btn:hover {
+    background-color: #e85d00;
+    color: #ffffff;
+}
+
+/* Active and Visited */
+body:not(.dark-mode) .btn:active,
+body:not(.dark-mode) .btn:visited {
+    color: #ffffff;
+}
+
+/* Navbar Proper Spacing Fix */
+
+.navbar nav {
+    width: 85%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav .logo {
+    flex-shrink: 0;
+}
+
+.navbar nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 28px;
+    flex-wrap: nowrap;
+}
+
+.navbar nav .menu li {
+    list-style: none;
+}
+
+.navbar nav .menu a {
+    white-space: nowrap;
+}
+
+.navbar nav .theme-toggle {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .navbar nav {
+        width: 95%;
+        gap: 15px;
+    }
+
+    .navbar nav .menu {
+        gap: 15px;
+    }
+
+    .navbar nav .menu a {
+        font-size: 15px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .navbar nav {
+        width: 90%;
+    }
+
+    .navbar nav .menu {
+        gap: 15px;
+    }
+}
+
+/* Remove Navbar Border */
+.navbar {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar nav {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar nav .menu,
+.navbar nav .menu li,
+.navbar nav .menu a {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Remove Dark Mode Navbar Border */
+body.dark-mode .navbar {
+    border-bottom: none !important;
+}
+
+/* Remove Focus Outline */
+.navbar:focus,
+.navbar:focus-within,
+.navbar nav:focus,
+.navbar nav:focus-within {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+

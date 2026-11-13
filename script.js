@@ -118,3 +118,58 @@ if (contactForm) {
         });
     });
 }
+
+
+//more movement
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll(
+        "section, .banner, .project-card, .skill-card"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.animate(
+                    [
+                        {
+                            opacity: 0,
+                            transform: "translateY(50px)"
+                        },
+                        {
+                            opacity: 1,
+                            transform: "translateY(0)"
+                        }
+                    ],
+                    {
+                        duration: 900,
+                        easing: "cubic-bezier(0.16, 1, 0.3, 1)"
+                    }
+                );
+
+            } else {
+                // Reset animation when element leaves the screen
+                entry.target.getAnimations().forEach((animation) => {
+                    animation.cancel();
+                });
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+    elements.forEach((element) => {
+        observer.observe(element);
+    });
+
+});
+
+
+
+
+
